@@ -82,6 +82,8 @@ def play_game():
     print(display_current_word(word, guessed_letters)) 
 
     if get_user_input_and_check_guess(word): 
+      # Capture the guess within the if block
+      guess = get_valid_letter() 
       guessed_letters.append(guess) 
 
     # Check for win condition
